@@ -10,7 +10,7 @@ function test() {
         echo "Searching pastebin..."
         curl -s -X GET "$url" | python -m json.tool > ./output/$dir/output.json 
         cat ./output/$dir/output.json | jq -r '.data[] | .id' | awk '{print "https://psbdmp.ws/" $1 }' > ./output/$dir/urls.txt
-        echo "output present in ./output/$dir/$2"
+        echo "Task completed. Output present in ./output/$dir/$2"
         exit 0
         return 0
 }
