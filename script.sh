@@ -1,7 +1,10 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-  echo "Not enough arguments";
+  echo "Usage:";
+  echo "Search for domains - ./script.sh -d domain.com" 
+  echo "Search for emails  - ./script.sh -e foo@bar.com"
+  echo "General search     - ./script.sh -g foobar"
   exit 0;
 fi
 
