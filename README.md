@@ -24,11 +24,11 @@ Done
 
 ## Output
 
-```
+`
 Outputs will be stored in ./output/domain(or)./output/email(or)./output/general depending on what you search for.
 The output will contain 2 files, output.json and urls.txt. 
 Output.json will contain the original json returned by the API in a beautified format and urls.txt will contain the URLs returned by the API in a txt format. 
-```
+`
 ## Acknowledgments
 
 * [Tomnomnom](https://twitter.com/tomnomnom)
