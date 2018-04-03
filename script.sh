@@ -16,8 +16,8 @@ if [[ $1 == '-g' ]] && [[ $2 != '' ]] ; then
         echo "Done"
         exit 0
         elif [[ $2 == '' ]]; then 
-                echo "No input"
-                exit 0
+        echo "No input"
+        exit 0
 fi
 
 if [[ $1 == '-e' ]] && [[ $2 != '' ]] ; then
@@ -28,8 +28,8 @@ if [[ $1 == '-e' ]] && [[ $2 != '' ]] ; then
         echo "Done"
         exit 0
         elif [[ $2 == '' ]]; then 
-                echo "No input"
-                exit 0
+        echo "No input"
+        exit 0
 fi
 
 if [[ $1 == '-d' ]] && [[ $2 != '' ]] ; then
@@ -40,8 +40,8 @@ if [[ $1 == '-d' ]] && [[ $2 != '' ]] ; then
         echo "Done"
         exit 0
         elif [[ $2 == '' ]]; then
-                echo "No input"
-                exit 0
+        echo "No input"
+        exit 0
 fi
 
 
