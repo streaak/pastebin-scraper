@@ -22,6 +22,11 @@ Searching pastebin...
 Task completed. Output present in ./output/general/facebook.com/
 ```
 
+## Installation
+* $ git clone https://github.com/streaak/pastebin-scraper.git
+* $ cd pastebin-scraper
+* $ mkdir output/domain/ output/email/ output/general/
+
 ## Output
 
 
