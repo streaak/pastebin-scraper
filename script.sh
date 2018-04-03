@@ -6,9 +6,6 @@ if [ $# -eq 0 ] || [ $1 == '-h' ]; then
   exit 0;
 fi
 
-dir=''
-url=''
-
 function test() {
         echo "Searching pastebin..."
         curl -s -X GET "$url" | python -m json.tool > ./output/$dir/output.json 
