@@ -21,7 +21,7 @@ url=https://psbdmp.ws/api/search/$2
 mkdir ./output/$dir/
 test
 elif [[ $2 == '' ]]; then
-        echo "No input"
+        echo "Missing Value. Try to run ./script.sh -g <Term here>"
         exit 0
 fi
 
@@ -31,7 +31,7 @@ url=https://psbdmp.ws/api/search/email/$2
 mkdir ./output/$dir/
 test
 elif [[ $2 == '' ]]; then
-        echo "No input"
+        echo "Missing Value. Try to run ./script.sh -e <Term here>"
         exit 0
 fi
 
@@ -41,6 +41,6 @@ url=https://psbdmp.ws/api/search/domain/$2
 mkdir ./output/$dir/
 test
 elif [[ $2 == '' ]]; then
-        echo "No input"
+        echo "Missing Value. Try to run ./script.sh -d <Term here>"
         exit 0
 fi
