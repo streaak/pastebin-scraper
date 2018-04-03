@@ -30,6 +30,11 @@ The output will contain 2 files, output.json and urls.txt.
 Output.json will contain the original json returned by the API in a beautified format and urls.txt will contain the URLs returned by the API in a txt format. 
 ```
 
+## TODO
+
+* Improve the tool 
+
+
 ## Acknowledgments
 
 * [Tomnomnom](https://twitter.com/tomnomnom)
