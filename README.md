@@ -19,7 +19,7 @@ General search	   - ./script.sh -g foobar
 ``` 
 ./script.sh -d facebook.com
 Searching pastebin...
-Done
+Task completed. Output present in ./output/general/facebook.com/
 ```
 
 ## Output
