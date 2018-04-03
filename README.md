@@ -24,4 +24,4 @@ Done
 
 ## Acknowledgments
 
-* @tomnomnom
+* [Tomnomnom](https://twitter.com/tomnomnom)
