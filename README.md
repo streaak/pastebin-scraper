@@ -14,3 +14,10 @@ Search for emails  - ./script.sh -e foo@bar.com
 General search	   - ./script.sh -g foobar
 ```
 
+## Example 
+
+``` 
+./script.sh -d facebook.com
+Searching pastebin...
+Done
+```
