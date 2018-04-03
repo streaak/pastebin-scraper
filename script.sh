@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]; then
+if [ $# -eq 0 ] || [ $1 == '-h' ]; then
   echo "Usage:";
   echo "Search for domains - ./script.sh -d domain.com" 
   echo "Search for emails  - ./script.sh -e foo@bar.com"
