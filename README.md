@@ -30,7 +30,7 @@ Outputs will be stored in ./output/domain (or) ./output/email (or) ./output/gene
 
 ## TODO
 
-* Improve the tool 
+* Add more features
 
 
 ## Acknowledgments
