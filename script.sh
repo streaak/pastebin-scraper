@@ -16,7 +16,7 @@ if [[ $1 == '-g' ]] && [[ $2 != '' ]] ; then
         echo "Task completed. Output present in ./output/general/$2/"
         exit 0
         elif [[ $2 == '' ]]; then 
-        echo "No input"
+        echo "Missing Value. Try to run ./script.sh -g <Term here>"
         exit 0
 fi
 
@@ -28,7 +28,7 @@ if [[ $1 == '-e' ]] && [[ $2 != '' ]] ; then
         echo "Task completed. Output present in ./output/email/$2/"
         exit 0
         elif [[ $2 == '' ]]; then 
-        echo "No input"
+        echo "Missing Value. Try to run ./script.sh -e <email here>"
         exit 0
 fi
 
@@ -40,7 +40,7 @@ if [[ $1 == '-d' ]] && [[ $2 != '' ]] ; then
         echo "Task completed. Output present in ./output/domain/$2/"
         exit 0
         elif [[ $2 == '' ]]; then
-        echo "No input"
+        echo "Missing Value. Try to run ./script.sh -d <domain here>"
         exit 0
 fi
 
