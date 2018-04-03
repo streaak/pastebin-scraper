@@ -38,3 +38,4 @@ Output.json will contain the original json returned by the API in a beautified f
 ## Acknowledgments
 
 * [Tomnomnom](https://twitter.com/tomnomnom)
+* [Ed](https://twitter.com/edoverflow)
