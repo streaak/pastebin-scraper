@@ -10,6 +10,7 @@ if [[ $1 == '-g' ]] && [[ $2 != '' ]] ; then
         echo "Searching pastebin..."
         curl -s -X GET "https://psbdmp.ws/api/search/$2" | python -m json.tool > ./output/general/$2/output.json
         cat ./output/general/$2/output.json | jq -r '.data[] | .id' | awk '{print "https://psbdmp.ws/" $1 }' > ./output/general/$2/urls.txt
+        echo "Done"
         exit 0
         elif [[ $2 == '' ]]; then 
                 echo "No input"
@@ -21,6 +22,7 @@ if [[ $1 == '-e' ]] && [[ $2 != '' ]] ; then
         echo "Searching pastebin..."
         curl -s -X GET "https://psbdmp.ws/api/search/email/$2" | python -m json.tool > ./output/email/$2/output.json
         cat ./output/email/$2/output.json | jq -r '.data[] | .id' | awk '{print "https://psbdmp.ws/" $1 }' > ./output/email/$2/urls.txt
+        echo "Done"
         exit 0
         elif [[ $2 == '' ]]; then 
                 echo "No input"
@@ -32,6 +34,7 @@ if [[ $1 == '-d' ]] && [[ $2 != '' ]] ; then
         echo "Searching pastebin..."
         curl -s -X GET "https://psbdmp.ws/api/search/domain/$2" | python -m json.tool > ./output/domain/$2/output.json
         cat ./output/domain/$2/output.json | jq -r '.data[] | .id' | awk '{print "https://psbdmp.ws/" $1 }' > ./output/domain/$2/urls.txt
+        echo "Done"
         exit 0
         elif [[ $2 == '' ]]; then
                 echo "No input"
