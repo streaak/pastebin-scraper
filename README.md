@@ -21,3 +21,7 @@ General search	   - ./script.sh -g foobar
 Searching pastebin...
 Done
 ```
+
+## Acknowledgments
+
+* @tomnomnom
