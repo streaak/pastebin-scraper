@@ -17,7 +17,7 @@ General search	   - ./script.sh -g foobar
 ``` 
 $ ./scrape.sh -d facebook.com
 Searching pastebin...
-Task completed. Output present in ./output/general/facebook.com/
+Task completed. Output present in ./output/domain/facebook.com/
 ```
 
 ## Installation
