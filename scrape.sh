@@ -1,9 +1,18 @@
 if [ $# -eq 0 ] || [ $1 == '-h' ]; then
-  echo "Usage:";
+  echo -e "$(tput setaf 1)        ____  ____          _____   __  ____    ____  ____   ___  ____  
+        |    \|    \        / ___/  /  ]|    \  /    ||    \ /  _]|    \ 
+        |  o  )  o  ) _____(   \_  /  / |  D  )|  o  ||  o  )  [_ |  D  )
+        |   _/|     ||     |\__  |/  /  |    / |     ||   _/    _]|    / 
+        |  |  |  O  ||_____|/  \ /   \_ |    \ |  _  ||  | |   [_ |    \ 
+        |  |  |     |       \    \     ||  .  \|  |  ||  | |     ||  .  \ 
+        |__|  |_____|        \___|\____||__|\_||__|__||__| |_____||__|\_|$(tput sgr0)"
+
+  echo -e "\n\t\t\t\t By @Streaak with $(tput setaf 1)<3$(tput sgr0)"      
+  echo -e "$(tput setaf 2)\nUsage:$(tput sgr0)" 
   echo "Search for domains - ./script.sh -d domain.com"
   echo "Search for emails  - ./script.sh -e foo@bar.com"
   echo "General search     - ./script.sh -g foobar"
-  exit 0;
+  exit 0
 fi
 
 function scrape() {
