@@ -43,3 +43,4 @@ Outputs will either be stored in `./output/domain`, `./output/email` or `./outpu
 
 * [Tomnomnom](https://twitter.com/tomnomnom)
 * [Ed](https://twitter.com/edoverflow)
+* [CaptainFreak](https://twitter.com/0xcaptainfreak)
