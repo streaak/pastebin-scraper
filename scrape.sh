@@ -1,5 +1,4 @@
-if [ $# -eq 0 ] || [ $1 == '-h' ]; then
-  echo -e "$(tput setaf 1)        ____  ____          _____   __  ____    ____  ____   ___  ____  
+ echo -e "$(tput setaf 1)        ____  ____          _____   __  ____    ____  ____   ___  ____  
         |    \|    \        / ___/  /  ]|    \  /    ||    \ /  _]|    \ 
         |  o  )  o  ) _____(   \_  /  / |  D  )|  o  ||  o  )  [_ |  D  )
         |   _/|     ||     |\__  |/  /  |    / |     ||   _/    _]|    / 
@@ -7,7 +6,8 @@ if [ $# -eq 0 ] || [ $1 == '-h' ]; then
         |  |  |     |       \    \     ||  .  \|  |  ||  | |     ||  .  \ 
         |__|  |_____|        \___|\____||__|\_||__|__||__| |_____||__|\_|$(tput sgr0)"
 
-  echo -e "\n\t\t\t\t By @Streaak with $(tput setaf 1)<3$(tput sgr0)"      
+echo -e "\n\t\t\t\t By @Streaak $(tput sgr0)"
+if [ $# -eq 0 ] || [ $1 == '-h' ]; then
   echo -e "$(tput setaf 2)\nUsage:$(tput sgr0)" 
   echo "Search for domains - ./script.sh -d domain.com"
   echo "Search for emails  - ./script.sh -e foo@bar.com"
