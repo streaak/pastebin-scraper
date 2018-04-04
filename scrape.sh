@@ -6,7 +6,7 @@
         |  |  |     |       \    \     ||  .  \|  |  ||  | |     ||  .  \ 
         |__|  |_____|        \___|\____||__|\_||__|__||__| |_____||__|\_|$(tput sgr0)"
 
-echo -e "\n\t\t\t\t By @Streaak $(tput sgr0)"
+echo -e "\n\t\t\t\t By @Streaak"
 if [ $# -eq 0 ] || [ $1 == '-h' ]; then
   echo -e "$(tput setaf 2)\nUsage:$(tput sgr0)" 
   echo "Search for domains - ./script.sh -d domain.com"
