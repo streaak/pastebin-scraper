@@ -25,7 +25,9 @@ Task completed. Output present in ./output/general/facebook.com/
 ```
 $ git clone https://github.com/streaak/pastebin-scraper.git
 $ cd pastebin-scraper
-$ mkdir output/domain/ output/email/ output/general/
+$ sudo chmod +x ./scrape.sh
+$ sudo apt-get install jq
+$ mkdir -p output/domain/ output/email/ output/general/
 ```
 
 ## Output
