@@ -27,7 +27,7 @@ function scrape() {
 if [[ $1 == '-g' ]] && [[ $2 != '' ]] ; then
 dir=general/$2
 url=https://psbdmp.ws/api/search/$2
-mkdir ./output/$dir/
+mkdir -p ./output/$dir/
 scrape
 elif [[ $2 == '' ]]; then
         echo "Missing Value. Try to run ./script.sh -g <Term here>"
@@ -37,7 +37,7 @@ fi
 if [[ $1 == '-e' ]] && [[ $2 != '' ]] ; then
 dir=email/$2
 url=https://psbdmp.ws/api/search/email/$2
-mkdir ./output/$dir/
+mkdir -p ./output/$dir/
 scrape
 elif [[ $2 == '' ]]; then
         echo "Missing Value. Try to run ./script.sh -e <Term here>"
@@ -47,7 +47,7 @@ fi
 if [[ $1 == '-d' ]] && [[ $2 != '' ]] ; then
 dir=domain/$2
 url=https://psbdmp.ws/api/search/domain/$2
-mkdir ./output/$dir/
+mkdir -p ./output/$dir/
 scrape
 elif [[ $2 == '' ]]; then
         echo "Missing Value. Try to run ./script.sh -d <Term here>"
