@@ -15,6 +15,11 @@ if [ $# -eq 0 ] || [ $1 == '-h' ]; then
   exit 0
 fi
 
+if ! [ -x "$(command jq --version)" ]; then
+  echo 'Error: jq is not installed.' >&2
+  exit 1
+fi 
+
 function scrape() {
         echo "Searching pastebin..."
         curl -s -X GET "$url" | python -m json.tool > ./output/$dir/output.json 
