@@ -29,7 +29,7 @@ dir=general/$2
 url=https://psbdmp.ws/api/search/$2
 mkdir -p ./output/$dir/
 scrape
-elif [[ $2 == '' ]]; then
+elif [[ $1 == '-g' ]] && [[ $2 == '' ]]; then
         echo "Missing Value. Try to run ./script.sh -g <Term here>"
         exit 0
 fi
@@ -39,7 +39,7 @@ dir=email/$2
 url=https://psbdmp.ws/api/search/email/$2
 mkdir -p ./output/$dir/
 scrape
-elif [[ $2 == '' ]]; then
+elif [[ $1 == '-e' ]] && [[ $2 == '' ]]; then
         echo "Missing Value. Try to run ./script.sh -e <Term here>"
         exit 0
 fi
@@ -49,7 +49,7 @@ dir=domain/$2
 url=https://psbdmp.ws/api/search/domain/$2
 mkdir -p ./output/$dir/
 scrape
-elif [[ $2 == '' ]]; then
+elif [[ $1 == '-d' ]] && [[ $2 == '' ]]; then
         echo "Missing Value. Try to run ./script.sh -d <Term here>"
         exit 0
 fi
